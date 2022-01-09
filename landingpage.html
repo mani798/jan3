@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h2>
+          LANDING PAGE
+        </h2>
+        <link rel="stylesheet" href="landingpage.css">
+    </head>
+    <body> 
+      <h2 class="white-text"> welcome to geekster</h2> 
+      <div id="text">
+      <label  >First name</label>
+      <input type="text" name="first_name" placeholder="First name" id="firstname" required>
+      <br>
+      <br>
+      <label  >Last Name</label>
+      <input type="text" name="last_name" placeholder="Last Name" id="lastname" required>
+      <br>
+      <br>
+      <label>  Email</label>
+      <input type="text" name="Email" placeholder="Email" id="email" required>
+      <br>
+      <br>
+      <label class="text">Gender</label>
+      <div>
+      <input  type="radio" name="gender" id="male">
+      <label class="radio-one" >male</label>
+      <input  type="radio"   name="gender" id="female">
+      <label class="radio-two" >female</label>
+      <br>
+      <br>
+      <p class="name">subject</p>
+      <select class="option" name="subject" id="subject" >
+      <option disabled="disabled" selected="selected">--choose option</option>
+      <option> java</option>
+      <option>dsa</option>
+      <option>web fundamentals</option>
+      </select>
+      <br>
+      <br>
+      <label class="area-code">AreaCode</label>
+      <input class="code" type="text" name="area_code" id="code" >
+      <br>
+      <br>
+      <label class="phone-number">Phone Number</label>
+      <input class="number" type="text" name="phone" id="phoneno" >
+      <br>
+      <br>
+      <input type="button" value="submit" onclick="send()"/>            
+      </div>
+    </body>
+    <script>
+      var firstname = document.querySelector("#firstname");
+      var lastname = document.querySelector("#lastname");
+      var email = document.querySelector("#email");
+      var male = document.querySelector("#male");
+      var female = document.querySelector("#female");
+      var subject = document.querySelector("#subject");
+      var code = document.querySelector("#code");
+      var phoneno = document.querySelector("#phoneno");
+
+      function send(){
+        console.log(firstname.value);
+        console.log(lastname.value);
+        console.log(email.value);
+        if(male.checked){
+          console.log(male.value)
+        }
+        if(female.checked){
+          console.log(female.value)
+        }
+        console.log(subject.value);
+        console.log(code.value);
+        console.log(phoneno.value);
+        
+      }
+    </script>
+</html>

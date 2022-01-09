@@ -1,0 +1,22 @@
+h2{
+   color: white; 
+   text-align: center;
+   text-decoration: wavy;
+}
+body{
+    background-color: blue;
+    background-image:" ../dec 28/car.jpeg";
+}
+.white-text{
+    text-align: center;
+    text-decoration: wavy;
+    color: white;
+    text-size-adjust: 20px;
+}
+#text{
+    color: white;
+    text-align: center;
+}
+.button{
+    color: black;
+}
